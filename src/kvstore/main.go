@@ -6,6 +6,5 @@ import (
 )
 
 func main() {
-	var kvstore *store.KVStore = new(store.KVStore)
-	service.RunKeyValueStoreService(kvstore)
+	service.RunKeyValueStoreService(store.GetKvStore())
 }
